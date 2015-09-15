@@ -1,0 +1,23 @@
+{
+  "name": "generator-legit-module",
+  "version": "0.0.1",
+  "description": "A simple generator to scaffold out Legit modules",
+  "files": [
+    "app",
+    "router"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Legitcode/generator.git"
+  },
+  "author": "Darin Haener <dphaener@gmail.com> (https://github.com/dphaener)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Legitcode/generator/issues"
+  },
+  "homepage": "https://github.com/Legitcode/generator#readme",
+  "keywords": ["yeoman-generator"],
+  "dependencies": {
+    "yeoman-generator": "^0.20.2"
+  }
+}
