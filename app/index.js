@@ -3,7 +3,7 @@
 var util = require('util');
 var path = require('path');
 var yeoman = require('yeoman-generator');
- 
+
 var LegitGenerator = yeoman.generators.Base.extend({
   promptUser: function() {
     var done = this.async();
@@ -54,14 +54,16 @@ var LegitGenerator = yeoman.generators.Base.extend({
     this.mkdir("tests");
   },
   copyMainFiles: function() {
-    var context = { 
+    var context = {
       module_name: this.appName,
       author_name: this.authorName,
       description: this.appDescription
     };
- 
+
     this.template("_package.json", "package.json", context);
     this.template("_mocha.opts", "mocha.opts");
+    this.template("_.npmignore", ".npmignore");
+    this.template("_circle.yml", "circle.yml");
     this.template("_setup.js", "tests/setup.js");
     this.template("_test_helper.js", "tests/test_helper.js");
   },
@@ -87,5 +89,5 @@ var LegitGenerator = yeoman.generators.Base.extend({
     }
   }
 });
- 
+
 module.exports = LegitGenerator;
