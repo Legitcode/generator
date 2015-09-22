@@ -5,10 +5,10 @@
   "main": "lib/<%= module_name %>.js",
   "scripts": {
     "start": "webpack-dev-server --config ./example/server.config.js --hot --port 8881",
-    "test": "mocha --opts ./mocha.opts; eslint ./src/ --ext .jsx,.js --global require,exports:true"
+    "test": "mocha --opts ./mocha.opts; eslint ./src/ --ext .jsx,.js --global require,exports:true",
     "compile": "babel src --stage 0 --out-dir lib;",
     "prepublish": "babel src --stage 0 --out-dir lib;",
-    "example": "webpack --config ./example/example.config.js",
+    "example": "webpack --config ./example/example.config.js"
   },
   "repository": {
     "type": "git",
