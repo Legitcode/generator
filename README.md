@@ -3,7 +3,8 @@
 A module generator for Legitcode. It's as easy as:
 
 ```bash
-npm -g install yo
+npm install yo -g
+npm install generator-legit-module -g
 yo legit-module
 ```
 
