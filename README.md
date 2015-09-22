@@ -3,7 +3,7 @@
 A module generator for Legitcode. It's as easy as:
 
 ```bash
-npm install -g yeoman
+npm -g install yo
 yo legit-module
 ```
 
